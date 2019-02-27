@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Number Checker</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <div class="jumbotron">
+    <h1 class="text-center">Goldmember!</h1>
+    <h2 class="text-center">Collect the right number of bars to see my member!</h2>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card mb-2">
+          <h3 class="card-header">Computer Pick</h3>
+          <div class="card-body text-center">
+            <h1 id="computer-pick">???</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card mb-2">
+          <h3 class="card-header">You Pick</h3>
+          <div class="card-body text-center">
+            <button id="button-1" class="btn btn-danger btn-choice" value="1">
+              <h1>Yellow Gold</h1>
+            </button>
+            <button id="button-2" class="btn btn-danger btn-choice" value="2">
+              <h1>White Gold</h1>
+            </button>
+            <button id="button-3" class="btn btn-danger btn-choice" value="3">
+              <h1>Rose Gold</h1>
+            </button>
+            <button id="button-4" class="btn btn-danger btn-choice" value="4">
+              <h1>4</h1>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card mb-2">
+          <h3 class="card-header">Result</h3>
+          <div class="card-body text-center">
+            <h1 id="result"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
