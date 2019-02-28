@@ -11,45 +11,49 @@
 
   <!-- Added a link to Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
 
-  <div class="jumbotron">
-    <h1 class="text-center">Goldmember!</h1>
-    <h2 class="text-center">Collect the right number of bars to see my member!</h2>
-  </div>
 
   <div class="container">
+    <div class="directions col-6">
+        <h2 class="text-center">Match my gold bars or see my member!</h2>
+      </div>
 
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-6">
         <div class="card mb-2">
-          <h3 class="card-header">Computer Pick</h3>
+          <h3 class="card-header">Goldmember's Bars</h3>
           <div class="card-body text-center">
-            <h1 id="computer-pick">???</h1>
+            <h1 id="computer-pick"></h1>
           </div>
         </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-6">
         <div class="card mb-2">
           <h3 class="card-header">You Pick</h3>
           <div class="card-body text-center">
             <button id="yellow-Gold" class="btn btn-danger btn-choice" value="1">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-p2YKeCGhxule3nF9D_k_kklk4TQHq945L-yn-5HEKHHbeYBlg" alt="yellow gold bar">
+              <h6>Yellow Gold</h6>
             </button>
             <button id="white-Gold" class="btn btn-danger btn-choice" value="2">
               <img src="https://www.jewelrynotes.com/jn/wp-content/uploads/2013/01/white-gold-bars-300x225.jpg" alt="white gold bar">
+              <h6>White Gold</h6>
             </button>
             <button id="rose-Gold" class="btn btn-danger btn-choice" value="3">
-              <h1>Rose Gold</h1>
+              <img src="assets/images/rosegoldbar.jpg" alt="rosegoldbar">
+              <h6>Rose Gold</h6>
             </button>
             <button id="green-Gold" class="btn btn-danger btn-choice" value="4">
-              <h1>Green Gold</h1>
+              <img src="http://www.chinadaily.com.cn/business/img/attachement/jpg/site1/20170505/d8cb8a14fbeb1a75f4bf05.jpg" alt="green gold bar">
+              <h6>Green Gold</h6>
             </button>
           </div>
         </div>
@@ -57,15 +61,27 @@
     </div>
 
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-6">
         <div class="card mb-2">
-          <h3 class="card-header">Result</h3>
+          <h3 class="card-header">Your Gold Bars</h3>
           <div class="card-body text-center">
-            <h1 id="myGold"></h1>
+            <h4 id="myGold"></h4>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-2">
+            <h3 class="card-header">Record</h3>
+            <div class="card-body text-center">
+              <h4 id="Wins"></h4>
+              <h4 id="Losses"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
 
   </div>
 
