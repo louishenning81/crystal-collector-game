@@ -62,7 +62,7 @@ $(document).ready(function () {
                 $("#myGold").text(myGold);
             }
             if (myGold === computerGold) {
-                $("#myGold").text("Yep! You got it! Refresh the page to play again.");
+                $("#myGold").text("Yep! You got it!");
                 wins++;
                 $("#Wins").html("Wins: " + wins);
                 myGold = 0;
@@ -72,7 +72,7 @@ $(document).ready(function () {
                 
 
             } else if (myGold > computerGold) {
-                $("#myGold").text("Nope. Refresh the page to play again.");
+                $("#myGold").text("Nope.");
                 losses++;
                 $("#Losses").html("Losses: " + losses);
                 myGold = 0;
